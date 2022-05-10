@@ -109,7 +109,7 @@ const deleteEvent = async (req, res) => {
             })
         }
 
-        await Evento.findByIdAndDelete(eventId, );
+        const eventToDelete = await Evento.findByIdAndDelete(eventId, );
 
         return res.json({
             ok: true,
